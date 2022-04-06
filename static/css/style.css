@@ -399,3 +399,10 @@ img {
 .skills__icon {
     margin-right: var(--mb-0-75);
 }
+
+/*==================== QUALIFICATION ====================*/
+.qualification__tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2);
+}
