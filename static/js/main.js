@@ -28,3 +28,80 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/*==================== ACCORDION SKILLS ====================*/
+const skillsContent = document.getElementsByClassName('skills__content'),
+      skillsHeader = document.querySelectorAll('.skills__header')
+
+function toggleSkills() {
+    let itemClass = this.parentNode.className
+
+    for (i = 0; i < skillsContent.length; i++) {
+        skillsContent[i].className = 'skills__content skills__close'
+    }
+    if(itemClass === 'skills__content skills__close') {
+        this.parentNode.className = 'skills__content skills__open'
+    }
+}
+
+skillsHeader.forEach((el) => {
+    el.addEventListener('click', toggleSkills)
+})
+
+/*==================== QUALIFICATION TABS ====================*/
+const tabs = document.querySelectorAll('[data-target]'),
+      tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('qualification__active')
+        })
+        target.classList.add('qualification__active')
+
+        tab.forEach(tab => {
+            tab.classList.remove('qualification__active')
+
+        })
+        tab.classList.add('qualification__active')
+    })
+})
+
+/*==================== SERVICES MODEL ====================*/
+const modelViews = document.querySelectorAll('.services__model'),
+      modelBtns = document.querySelectorAll('.services__button'),
+      modelCloses = document.querySelectorAll('.services__model-close')
+
+let model = function(modelClick) {
+    modelViews[modelClick].classList.add('active-model')
+}
+
+modelBtns.forEach((modelBtn, i) => {
+    modelBtn.addEventListener('click', () => {
+        model(i)
+    })
+})
+
+modelCloses.forEach((modelClose) => {
+    modelClose.addEventListener('click', () => {
+        modelViews.forEach((modelView) => {
+            modelView.classList.remove('active-model')
+        })
+    })
+})
+
+/*==================== PORTFOLIO SWIPER ====================*/
+let swiper = new Swiper('.portfolio__container', {
+    cssMode: true,
+    navigation: {
+        nextE1: '.swiper-button-next',
+        prevE1: '.swiper-button-prev',
+    },
+    pagination: {
+        e1: '.swiper-pagination'
+    },
+    mousewheel: true,
+    keyboard: true,
+});

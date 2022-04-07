@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
 
         <!--================= SWIPER CSS ================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="static/css/swiper-bundle.min.css">
 
         <!--================= CSS ================-->
         <link rel="stylesheet" href="static/css/style.css">
@@ -36,6 +36,11 @@
                     <li class="nav__item">
                         <a href="#skills" class="nav__link">
                             <i class="uil uil-file-alt nav__icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Services
                         </a>
                     </li>
                     <li class="nav__item">
@@ -345,169 +350,350 @@
 
                 <div class="qualification__container container">
                     <div class="qualification__tabs">
-                        <div class="qualification__button button--flex">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
                             <i class="uil uil-graduation-cap qualification__icon"></i>
                             Education
                         </div>
 
-                        <div class="qualification__button button--flex">
+                        <div class="qualification__button button--flex" data-target="#work">
                             <i class="uil uil-briefcase-alt qualification__icon"></i>
                             Work
                         </div>
-
-                        <div class="qualification__sections">
-                            <!--================ QUALIFICATION CONTENT 1 ================-->
-                            <div class="qualification__content">
-                                <!--================ QUALIFICATION 1 ================-->
-                                <div class="qualification__data">
-                                    <div>
-                                        <h3 class="qualification__title">B.A. Computer Science and Economics</h3>
-                                        <span class="qualification__subtitle">University of Virginia</span>
-                                        <div class="qualification__calendar">
-                                            <i class="uil uil-calendar-alt"></i>
-                                            2020 - 2024
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <span class="qualification__rounder"></span>
-                                        <span class="qualification__line"></span>
+                    </div>
+                    <div class="qualification__sections">
+                        <!--================ QUALIFICATION CONTENT 1 ================-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!--================ QUALIFICATION 1 ================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">B.A. Computer Science and Economics</h3>
+                                    <span class="qualification__subtitle">University of Virginia</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2020 - 2024
                                     </div>
                                 </div>
 
-                                <!--================ QUALIFICATION 2 ================-->
-                                <div class="qualification__data">
-                                    <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
 
-                                    <div>
-                                        <span class="qualification__rounder"></span>
-                                        <span class="qualification__line"></span>
-                                    </div>
+                            <!--================ QUALIFICATION 2 ================-->
+                            <div class="qualification__data">
+                                <div></div>
 
-                                    <div>
-                                        <h3 class="qualification__title">Some Title</h3>
-                                        <span class="qualification__subtitle">University of Virginia</span>
-                                        <div class="qualification__calendar">
-                                            <i class="uil uil-calendar-alt"></i>
-                                            2020 - 2024
-                                        </div>
-                                    </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
                                 </div>
 
-                                <!--================ QUALIFICATION 3 ================-->
-                                <div class="qualification__data">
-                                    <div>
-                                        <h3 class="qualification__title">B.A. Computer Science and Economics</h3>
-                                        <span class="qualification__subtitle">University of Virginia</span>
-                                        <div class="qualification__calendar">
-                                            <i class="uil uil-calendar-alt"></i>
-                                            2020 - 2024
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <span class="qualification__rounder"></span>
-                                        <span class="qualification__line"></span>
-                                    </div>
-                                </div>
-
-                                <!--================ QUALIFICATION 4 ================-->
-                                <div class="qualification__data">
-
-                                    <div>
-                                        <span class="qualification__rounder"></span>
-                                        <!-- <span class="qualification__line"></span> -->
-                                    </div>
-
-                                    <div>
-                                        <h3 class="qualification__title">B.A. Computer Science and Economics</h3>
-                                        <span class="qualification__subtitle">University of Virginia</span>
-                                        <div class="qualification__calendar">
-                                            <i class="uil uil-calendar-alt"></i>
-                                            2020 - 2024
-                                        </div>
+                                <div>
+                                    <h3 class="qualification__title">Some Title</h3>
+                                    <span class="qualification__subtitle">University of Virginia</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2020 - 2024
                                     </div>
                                 </div>
                             </div>
 
-                            <!--================ QUALIFICATION CONTENT 2 ================-->
-                            <div class="qualification__content">
-                                <!--================ QUALIFICATION 1 ================-->
-                                <div class="qualification__data">
-                                    <div>
-                                        <h3 class="qualification__title">Software Engineering Intern</h3>
-                                        <span class="qualification__subtitle">S.T. Engineering iDirect</span>
-                                        <div class="qualification__calendar">
-                                            <i class="uil uil-calendar-alt"></i>
-                                            2022 May - 2022 Aug
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <span class="qualification__rounder"></span>
-                                        <span class="qualification__line"></span>
+                            <!--================ QUALIFICATION 3 ================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">B.A. Computer Science and Economics</h3>
+                                    <span class="qualification__subtitle">University of Virginia</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2020 - 2024
                                     </div>
                                 </div>
 
-                                <!--================ QUALIFICATION 2 ================-->
-                                <div class="qualification__data">
-                                    <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
 
-                                    <div>
-                                        <span class="qualification__rounder"></span>
-                                        <span class="qualification__line"></span>
-                                    </div>
+                            <!--================ QUALIFICATION 4 ================-->
+                            <div class="qualification__data">
+                                <div></div>
 
-                                    <div>
-                                        <h3 class="qualification__title">Teaching Assistant - CS 2100</h3>
-                                        <span class="qualification__subtitle">Department of Computer Science, UVA</span>
-                                        <div class="qualification__calendar">
-                                            <i class="uil uil-calendar-alt"></i>
-                                            2021 Aug - Today
-                                        </div>
-                                    </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
                                 </div>
 
-                                <!--================ QUALIFICATION 3 ================-->
-                                <div class="qualification__data">
-                                    <div>
-                                        <h3 class="qualification__title">Web Designer</h3>
-                                        <span class="qualification__subtitle">Freelancer</span>
-                                        <div class="qualification__calendar">
-                                            <i class="uil uil-calendar-alt"></i>
-                                            2020 Oct - Today
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <span class="qualification__rounder"></span>
-                                        <span class="qualification__line"></span>
+                                <div>
+                                    <h3 class="qualification__title">B.A. Computer Science and Economics</h3>
+                                    <span class="qualification__subtitle">University of Virginia</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2020 - 2024
                                     </div>
                                 </div>
-
-                                <!--================ QUALIFICATION 4 ================-->
-                                <div class="qualification__data">
-
-                                    <div>
-                                        <span class="qualification__rounder"></span>
-                                        <!-- <span class="qualification__line"></span> -->
-                                    </div>
-
-                                    <div>
-                                        <h3 class="qualification__title">Software Engineer Intern</h3>
-                                        <span class="qualification__subtitle">edataconsulting</span>
-                                        <div class="qualification__calendar">
-                                            <i class="uil uil-calendar-alt"></i>
-                                            2021 May - 2021 Aug
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                            
+                            </div>
                         </div>
+
+                        <!--================ QUALIFICATION CONTENT 2 ================-->
+                        <div class="qualification__content" data-content id="work">
+                            <!--================ QUALIFICATION 1 ================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Software Engineering Intern</h3>
+                                    <span class="qualification__subtitle">S.T. Engineering iDirect</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2022 May - 2022 Aug
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--================ QUALIFICATION 2 ================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Teaching Assistant - CS 2100</h3>
+                                    <span class="qualification__subtitle">Department of Computer Science, UVA</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021 Aug - Today
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--================ QUALIFICATION 3 ================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Web Designer</h3>
+                                    <span class="qualification__subtitle">Freelancer</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2020 Oct - Today
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--================ QUALIFICATION 4 ================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Software Engineer Intern</h3>
+                                    <span class="qualification__subtitle">edataconsulting</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021 May - 2021 Aug
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            
                     </div>
                 </div>
             </section>
 
+            <!--================ SERVICES ================-->
+            <section class="services section" id="services">
+                <h2 class="section__title">Services</h2>
+                <span class="section__subtitle">What I Offer</span>
+
+                <div class="services__container container grid">
+                    <!--================ SERVICE 1 ================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-web-grid services__icon"></i>
+                            <h3 class="services__title">Software <br> Engineer</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__model">
+                            <div class="services__model-content">
+                                <h4 class="services__model-title">Software <br> Engineer</h4>
+                                <i class="uil uil-times services__model-close"></i>
+
+                                <ul class="services__model-services grid">
+                                    <li class="services__model-service">
+                                        <i class="uil uil-check-circle services__model-icon"></i>
+                                        <p>I developer softwares.</p>
+                                    </li>
+                                    <li class="services__model-service">
+                                        <i class="uil uil-check-circle services__model-icon"></i>
+                                        <p>Customized solutions</p>
+                                    </li>
+                                    <li class="services__model-service">
+                                        <i class="uil uil-check-circle services__model-icon"></i>
+                                        <p>I create UX element interactions</p>
+                                    </li>
+                                    <li class="services__model-service">
+                                        <i class="uil uil-check-circle services__model-icon"></i>
+                                        <p>I position your company brand</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--================ SERVICE 2 ================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-arrow services__icon"></i>
+                            <h3 class="services__title">Software <br> Engineer</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__model">
+                            <div class="services__model-content">
+                                <h4 class="services__model-title">Software <br> Engineer</h4>
+                                <i class="uil uil-times services__model-close"></i>
+
+                                <ul class="services__model-services grid">
+                                    <li class="services__model-service">
+                                        <i class="uil uil-check-circle services__model-icon"></i>
+                                        <p>I developer softwares.</p>
+                                    </li>
+                                    <li class="services__model-service">
+                                        <i class="uil uil-check-circle services__model-icon"></i>
+                                        <p>Customized solutions</p>
+                                    </li>
+                                    <li class="services__model-service">
+                                        <i class="uil uil-check-circle services__model-icon"></i>
+                                        <p>I create UX element interactions</p>
+                                    </li>
+                                    <li class="services__model-service">
+                                        <i class="uil uil-check-circle services__model-icon"></i>
+                                        <p>I position your company brand</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--================ SERVICE 3 ================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-pen services__icon"></i>
+                            <h3 class="services__title">Teaching <br> Assistant</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__model">
+                            <div class="services__model-content">
+                                <h4 class="services__model-title">Software <br> Engineer</h4>
+                                <i class="uil uil-times services__model-close"></i>
+
+                                <ul class="services__model-services grid">
+                                    <li class="services__model-service">
+                                        <i class="uil uil-check-circle services__model-icon"></i>
+                                        <p>I developer softwares.</p>
+                                    </li>
+                                    <li class="services__model-service">
+                                        <i class="uil uil-check-circle services__model-icon"></i>
+                                        <p>Customized solutions</p>
+                                    </li>
+                                    <li class="services__model-service">
+                                        <i class="uil uil-check-circle services__model-icon"></i>
+                                        <p>I create UX element interactions</p>
+                                    </li>
+                                    <li class="services__model-service">
+                                        <i class="uil uil-check-circle services__model-icon"></i>
+                                        <p>I position your company brand</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </section>
+
+            <!--================ PORTFOLIO ================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Most Recent Work</span>
+
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--================ PORTFOLIO 1 ================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Modern Website</h3>
+                                <p class="portfolio__description">Some description basidhaisdhiasdhiasdhaoshdaoshdoahd</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo 
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--================ PORTFOLIO 2 ================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Ecommerce Shop</h3>
+                                <p class="portfolio__description">Some description basidhaisdhiasdhiasdhaoshdaoshdoahd</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo 
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--================ PORTFOLIO 3 ================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Modern Website</h3>
+                                <p class="portfolio__description">Some description basidhaisdhiasdhiasdhaoshdaoshdoahd</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo 
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
         </main>
 
         <!--================ FOOTER ================-->
@@ -515,6 +701,7 @@
         <!--================ SCROLL TOP ================-->
 
         <!--================ SWIPER JS ================-->
+        <script src="static/js/swiper-bundle.min.js"></script>
 
         <!--================ MAIN JS ================-->
         <script src="static/js/main.js"></script>
